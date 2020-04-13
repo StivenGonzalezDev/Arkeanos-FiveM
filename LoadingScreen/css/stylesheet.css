@@ -1,0 +1,99 @@
+/*
+  Stiven González © 2020
+  Arkeanos © 2020
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Lato');
+
+* {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--fadeTo-Color);
+}
+
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 43%;
+}
+
+.caja{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+}
+
+.caja .b{
+  border-radius: 50%;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  border-top: 4px solid transparent !important;
+  border-bottom: 4px solid transparent !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%;);
+  animation: rotacion 2s infinite;
+}
+
+.caja .b1{
+  border-color: #009817;
+  width: 120px;
+  height: 120px;
+}
+
+.caja .b2{
+  border-color: #00D7E2;
+  width: 100px;
+  height: 100px;
+  animation-delay: 0.2s;
+}
+
+.caja .b3{
+  border-color: #E24300;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0.35s;
+}
+
+.caja .b4{
+  border-color: #717171;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0.5s;
+}
+
+@keyframes rotacion {
+    0%{
+      transform: translate(-50%,-50%) rotate(0deg);
+    }50%{
+      transform: translate(-50%,-50%) rotate(-180deg);
+    }100%{
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+
+#bg {
+  -webkit-background-size: cover;
+  background-size: cover;
+   }
+
+#link {
+    color: var(--footer-font-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: var(--footer-font-size);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+ /* Sección para deslizar las imágenes */
